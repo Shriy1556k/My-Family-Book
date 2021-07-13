@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+}
+
+#image {
+  padding: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: green;
+}

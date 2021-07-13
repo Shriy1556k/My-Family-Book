@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>My Family Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Family Book</h1>
+    <img id="image" src="Mama.jpg">
+    <br>
+    <h4 id="Name">B Namrata Patra</h4>
+    <br>
+    <button type="button" onclick="nextslide()">Next</button>
+</body>
+
+<script>
+    var images = ["Papa.jpg","Didi.jpg","Me.jpg","Mama.jpg"];
+    var names = ["B Ashok Patra", "Vineeta Kumari", "B Shriyansh"];
+
+    var i = 0;
+
+    function nextslide() {
+        if (i == 4) {
+            i = 0;
+        }
+        document.getElementById("image").src = images[i];
+        document.getElementById("Name").innerHTML = names[i];
+        i++;
+    };
+</script>
+
+</html>
